@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Layouts\Admin;
 
 use Livewire\Component;
 
-class ArticleForm extends Component
+class FormLayout extends Component
 {
     public $hobi = [];
     public $agama = '';
@@ -12,8 +12,11 @@ class ArticleForm extends Component
     public $name = '';
     public $password = '';
     public $showPassword = false;
+    public $article;
+
+
     public function render()
     {
-        return view('livewire.article-form');
+        return view('livewire.layouts.admin.form-layout');
     }
 }

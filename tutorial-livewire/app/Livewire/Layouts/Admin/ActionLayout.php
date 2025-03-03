@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Layouts\Admin;
 
 use Livewire\Component;
 
-class ArticleAction extends Component
+class ActionLayout extends Component
 {
-
     public $count = 0;
     public $message = '';
     public function tambah()
@@ -20,8 +19,9 @@ class ArticleAction extends Component
         $this->count--;
         $this->message = 'kurang';
     }
+
     public function render()
     {
-        return view('livewire.article-action');
+        return view('livewire.layouts.admin.action-layout');
     }
 }

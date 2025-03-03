@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class NavbarComponent extends Component
 {
     public function render()
     {
-        return view('livewire.navbar-component');
+        return view('livewire.components.navbar-component');
     }
 }

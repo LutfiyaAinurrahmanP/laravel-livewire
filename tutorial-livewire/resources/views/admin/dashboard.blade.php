@@ -11,9 +11,7 @@
 </head>
 
 <body>
-    <div class="container mx-auto p-6">
-        @livewire('sidebar-component')
-    </div>
+    @livewire('layouts.admin.dashboard-layout');
     @livewireScripts
 </body>
 
