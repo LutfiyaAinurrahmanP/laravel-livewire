@@ -21,6 +21,10 @@ Route::middleware(CheckSession::class)->group(function () {
         return view('admin.action');
     });
 
+    Route::get('/crud', function () {
+        return view('admin.crud');
+    });
+
     Route::get('/logout', function () {
         Session::forget('user_name');
         return redirect('/');
