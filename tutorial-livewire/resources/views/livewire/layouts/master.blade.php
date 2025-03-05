@@ -14,7 +14,11 @@
     <main>
         @yield('content')
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    {{-- Load CDN --}}
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js" defer></script>
+
+    {{-- Pastikan stack script dipanggil terakhir --}}
     @stack('scripts')
 </body>
 

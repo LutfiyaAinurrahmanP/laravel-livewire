@@ -14,7 +14,7 @@ class CreateData extends Component
     public function store()
     {
         $this->validate([
-            'name' => 'required|string',
+            'name' => 'required|string|regex:/^[A-Za-z\s]+$/',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
         ]);

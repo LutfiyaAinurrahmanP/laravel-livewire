@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    
+
     @livewire('layouts.main-layout');
     @livewireScripts
 </body>
